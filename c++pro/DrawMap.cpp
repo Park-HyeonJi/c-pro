@@ -1,4 +1,4 @@
-#include "DrawMap.h"
+ï»¿#include "DrawMap.h"
 
 DrawMap::DrawMap() {
 
@@ -7,27 +7,27 @@ DrawMap::DrawMap() {
 void DrawMap::GridDraw(int Start_x, int Start_y, int Width, int Height) {
     for (int y = 0; y < Height; y++)
     {
-        gotoxy(Start_x, Start_y + y);//windows¿¡¼­ Á¦°øÇÏ´Â ÇÔ¼ö·Î ÄÜ¼ÖÃ¢ÀÇ Ä¿¼­¸¦ ¿øÇÏ´Â À§Ä¡·Î º¸³»ÁÖ´Â ÇÔ¼ö 
+        gotoxy(Start_x, Start_y + y);//windowsì—ì„œ ì œê³µí•˜ëŠ” í•¨ìˆ˜ë¡œ ì½˜ì†”ì°½ì˜ ì»¤ì„œë¥¼ ì›í•˜ëŠ” ìœ„ì¹˜ë¡œ ë³´ë‚´ì£¼ëŠ” í•¨ìˆ˜ 
         if (y == 0)
         {
-            cout << "¦£";
+            cout << "â”Œ";
             for (int x = 1; x < Width - 1; x++)
-                cout << "¦¨";
-            cout << "¦¤";
+                cout << "â”¬";
+            cout << "â”";
         }
         else if (y == Height - 1)
         {
-            cout << "¦¦";
+            cout << "â””";
             for (int x = 1; x < Width - 1; x++)
-                cout << "¦ª";
-            cout << "¦¥";
+                cout << "â”´";
+            cout << "â”˜";
         }
         else
         {
-            cout << "¦§";
+            cout << "â”œ";
             for (int x = 1; x < Width - 1; x++)
-                cout << "¦«";
-            cout << "¦©";
+                cout << "â”¼";
+            cout << "â”¤";
         }
     }
     return;
@@ -40,24 +40,24 @@ void DrawMap::BoxDraw(int Start_x, int Start_y, int Width, int Height)
         gotoxy(Start_x, Start_y + y);
         if (y == 0)
         {
-            cout << "¦£";
+            cout << "â”Œ";
             for (int x = 1; x < Width - 1; x++)
-                cout << "¦¡";
-            cout << "¦¤";
+                cout << "â”€";
+            cout << "â”";
         }
         else if (y == Height - 1)
         {
-            cout << "¦¦";
+            cout << "â””";
             for (int x = 1; x < Width - 1; x++)
-                cout << "¦¡";
-            cout << "¦¥";
+                cout << "â”€";
+            cout << "â”˜";
         }
         else
         {
-            cout << "¦¢";
+            cout << "â”‚";
             for (int x = 1; x < Width - 1; x++)
                 cout << " ";
-            cout << "¦¢";
+            cout << "â”‚";
         }
     }
     return;
