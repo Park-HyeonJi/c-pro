@@ -14,3 +14,8 @@ struct Rect {
 	int top;
 	int bottom;
 };
+
+struct Position {
+	int x;
+	int y;
+};
