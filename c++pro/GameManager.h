@@ -39,6 +39,7 @@ private:
 	{
 		return { m_iWidth / 2 , m_iHeight / 2 };
 	}
+
 public:
 	GameManager();
 	~GameManager() { }

@@ -4,9 +4,6 @@ GameManager::GameManager()
 {
 		m_iWidth = MAPRANGE_WIDTH_MIN;
 		m_iHeight = MAPRANGE_HEIGHT_MIN;
-		m_iTurnCount = 1;
-		m_iUndoCount = DEFAULT_UNDOCOUNT;
-		m_bIsPlaying = false;
 		m_eStone = MARKLIST_FIRST;
 		m_cPlayer1 = Player(GetStoneMarkForPlayer1(), GetCenterCoordinate(), m_iWidth, m_iHeight);
 		m_cPlayer2 = Player(GetStoneMarkForPlayer2(), GetCenterCoordinate(), m_iWidth, m_iHeight);
@@ -136,7 +133,6 @@ void GameManager::Playing()
 			{
 				int startY = m_iHeight / 2;
 				MapDraw::ShowString(controlPlayer->GetPlayerName() + " 플레이어 승리!!", m_iWidth, startY);
-				MapDraw::ShowString("\n게임을 다시 시작하고 싶으면\nESC를 눌러서 재시작하세요!", m_iWidth, startY);
 				if (_getch()) {}
 				Reset();
 				return;
@@ -351,3 +347,5 @@ void GameManager::ShowStoneMenu()
 	startY += yInterval;
 	MapDraw::ShowString("입력 : ", m_iWidth, startY);
 }
+
+

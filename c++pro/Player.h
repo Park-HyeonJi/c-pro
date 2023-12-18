@@ -20,7 +20,6 @@ private:
 	int m_iMapHeight;
 	Stone m_sCursorCoord;
 	list<Stone> m_listHistory;
-	list<Stone> m_listReplayHistory;
 
 	int CalculateStones(int x, int y, DIR dir = DIR_START);
 	int GetDirX(DIR dir);
@@ -42,7 +41,6 @@ public:
 	~Player() { }
 	INPUTKEY Playing(Player* opponent);
 	string GetHistoryString();
-	string GetReplayHistoryString();
 	bool CheckVictory();
 	void MovePoint(Player* opponent);
 	void DrawHistory();

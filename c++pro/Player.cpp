@@ -249,14 +249,3 @@ string Player::GetHistoryString()
 
 	return returnValue;
 }
-
-string Player::GetReplayHistoryString()
-{
-	string returnValue;
-	for (list<Stone>::iterator iter = m_listReplayHistory.begin(); iter != m_listReplayHistory.end(); iter++)
-	{
-		returnValue += to_string(iter->m_iX) + "," + to_string(iter->m_iY) + " ";
-	}
-
-	return returnValue;
-}
