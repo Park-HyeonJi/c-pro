@@ -1,21 +1,9 @@
 #pragma once
 
 #include <iostream>
+#include <conio.h>
+#include <string>
 #include <Windows.h>
-
+#include <list>
+#include <fstream>
 using namespace std;
-
-#define WIDTH 20 //¹ÙµÏÆÇ °¡·Î
-#define HEIGHT 20 //¹ÙµÏÆÇ ¼¼·Î
-
-struct Rect {
-	int left;
-	int right;
-	int top;
-	int bottom;
-};
-
-struct Position {
-	int x;
-	int y;
-};

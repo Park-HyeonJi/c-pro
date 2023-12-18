@@ -1,4 +1,3 @@
-#include "Mecro.h"
 #include "GameManager.h"
 
 //오목판이 찌그러져 보이는 경우 콘솔 설정 바꾸는 방법
@@ -9,6 +8,6 @@
 
 void main()
 {
-	GameManager GM;
-	GM.RunGame();
+	GameManager gameManager;
+	gameManager.OpenGame();
 }
